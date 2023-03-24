@@ -346,7 +346,7 @@ body {
         counter-increment: my-awesome-counter;
         position: relative;
         font-family: $regular;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
       }
       & ol li::before {
         content: counter(my-awesome-counter) ". ";
@@ -525,7 +525,7 @@ body {
     }
     &__left {
       position: absolute;
-      top: 5%;
+      top: 1%;
       left: 5%;
       z-index: 5;
     }
@@ -533,7 +533,7 @@ body {
       color: #fff !important;
       width: 100%;
       & ol {
-        max-width: 400px !important;
+        max-width: 380px !important;
       }
     }
     &__title {
