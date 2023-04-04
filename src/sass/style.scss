@@ -134,7 +134,11 @@ body {
       font-size: 5px;
     }
     &__packshot {
+      max-width: 130px;
       text-align: center;
+    }
+    &__img {
+      @include img;
     }
   }
   .es-desc {
