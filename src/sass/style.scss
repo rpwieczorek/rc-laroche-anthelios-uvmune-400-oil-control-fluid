@@ -187,6 +187,7 @@ body {
     min-height: 315px;
     background: url('../images/bg-effect.png') no-repeat;
     background-position: right bottom;
+    background-size: cover;
     background-color: #1b2341;
     &__container{
       margin-left: auto;
@@ -395,7 +396,7 @@ body {
         transform: scaleX(1);
       }
       &:hover .es-cross__image {
-        transform: translateY(-8px);
+        transform: scale(1.1);
       }
     }
     &__number {
@@ -407,7 +408,7 @@ body {
       margin: 0 10px;
     }
     &__image {
-      transition: transform 0.3s;
+      transition: transform 0.5s;
       margin-bottom: 24px;
       max-height: 350px;
       img {
@@ -555,6 +556,9 @@ body {
       color: #fff !important;
     }
   }
+  .es-effect {
+    background-position: left bottom !important;
+  }
 }
 @media screen and (min-width: 728px) {
   .es-cross {
@@ -568,7 +572,22 @@ body {
       position: relative;
     }
     &__image {
-      display: none;
+      position: absolute;
+      &--1 {
+        max-height: 515px !important;
+        top:0;
+        right:-215px;
+      }
+      &--2 {
+        max-height: 370px !important;
+        top:68px;
+        left:-153px;
+      }
+      &--3 {
+        max-height: 350px !important;
+        top:65px;
+        right:-165px;
+      }
     }
     &__number {
       margin: 0 0 !important;
@@ -595,7 +614,7 @@ body {
       }
       &--3 {
         left: 20px;
-        top: 560px;
+        top: 580px;
       }
     }
   }
